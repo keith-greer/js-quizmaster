@@ -14,7 +14,6 @@ $spacing:(
 }
 *{
   box-sizing:border-box;
-  color:map-get($colors,white);
 }
 body{
   background-image:linear-gradient(110.66826971542821deg, rgba(249, 231, 148,1) 5.911420204978038%,rgba(246, 190, 212,1) 95.95534407027817%);
@@ -31,10 +30,9 @@ body{
 #quiz-wrap {
   font-family: arial, sans-serif;
   margin-top:5em;
-}
-
-
-
+  display:flex;
+  justify-content: center;
+  align-content: center;
 
 /* Question */
 #quiz-wrap h1 {
@@ -78,7 +76,10 @@ body{
     margin-left:map-get($spacing,one);
   }
  }
+ .question-structure{
+
+ }
 .device__header{
   color:map-get($colors,primary);
 }
- 
+}

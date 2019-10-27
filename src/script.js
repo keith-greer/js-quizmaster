@@ -58,12 +58,13 @@ var quiz = {
   draw: function(){
     var wrapper = document.getElementById('quiz-wrap');
     
-    // Loop through all the questions
-    // Create all the necessary HTML elements
+    // Loop through all the questions and
+    // create all the necessary inner HTML elements
     for (var index in questions) {
       var number = parseInt(index) +1;//The Current question number
-      var qwrap = document.createElement("div");// A div wrapper to hold this question and options
-      qwrap.classList.add("question");// CSS class, for cosmetics
+      var qwrap = document.createElement("div");// A div wrapper to hold each question and options
+      qwrap.classList.add("question");// CSS class, for cosmetic styles
+      qwrap.classList.add("question-structure");
       //Question h1
       var question = document.createElement("h1");
       question.innerHTML = number + ") " + questions[index]['q'];
