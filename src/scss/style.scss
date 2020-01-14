@@ -1,0 +1,85 @@
+
+$colors:(
+	primary:#413f54,
+	secondary:#355691,
+	accent:#7efc44,
+  white:#fff,
+	);
+$spacing:(
+	one:1em,
+	two:2em,
+	);
+@mixin shadow{
+  box-shadow: 22px 31px 33px -11px rgba(0,0,0,0.75);
+}
+*{
+  box-sizing:border-box;
+}
+body{
+  background-image:linear-gradient(110.66826971542821deg, rgba(249, 231, 148,1) 5.911420204978038%,rgba(246, 190, 212,1) 95.95534407027817%);
+}
+.wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: map-get($spacing,two);
+}
+
+
+/* The entire quiz form */
+#quiz-wrap {
+  font-family: arial, sans-serif;
+  margin-top:5em;
+  display:flex;
+  justify-content: center;
+  align-content: center;
+
+/* Question */
+#quiz-wrap h1 {
+  font-size: 18px;
+  color:map-get($colors,primary);
+
+}
+
+/* Options */
+#quiz-wrap label {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 10px;
+  color:map-get($colors,secondary);
+}
+
+
+
+/* Submit Button */
+#quiz-wrap button[type=submit] {
+  background:map-get($colors,accent);
+  padding: 10px;
+  border: 0;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.question{
+  background:map-get($colors,white);
+  color:map-get($colors,primary);
+  border-radius:10px;
+  padding:map-get($spacing,two);
+  margin:map-get($spacing,one);
+  .question h1{
+    color:map-get($colors,primary);
+    padding:map-get($spacing,one);
+  }
+  .question label{
+    margin-left:map-get($spacing,one);
+  }
+ }
+ .question-structure{
+
+ }
+.device__header{
+  color:map-get($colors,primary);
+}
+}
